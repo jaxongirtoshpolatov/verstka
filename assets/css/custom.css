@@ -161,7 +161,7 @@ body {
 
 .contacts .contact-info .contact-menu li {
   display: flex;
-  align-items: centr;
+  align-items: center;
   justify-content: start;
   flex-direction: row;
 }
@@ -180,7 +180,7 @@ body {
 
 .contacts .contact-info a {
   display: flex;
-  align-items: centr;
+  align-items: center;
   justify-content: start;
   flex-direction: row;
 }
@@ -236,7 +236,7 @@ body {
   margin-bottom: 16px;
 }
 
-.contacts .contact-form input:placeholder {
+.contacts .contact-form input::placeholder {
   font-family: "Wix Madefor Display";
   color: #1D1D1D;
   font-size: 16px;
@@ -786,7 +786,7 @@ body {
 
 .footer-right .contact a {
   display: flex;
-  align-items: cecnter;
+  align-items: center;
   justify-content: center;
   flex-direction: row;
 }

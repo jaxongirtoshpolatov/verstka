@@ -116,7 +116,7 @@
             margin-right: 88px;
             a 
             {
-                @include mixin.flex(cecnter,center);
+                @include mixin.flex(center,center);
             }
         }
         .document

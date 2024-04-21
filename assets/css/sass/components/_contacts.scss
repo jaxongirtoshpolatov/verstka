@@ -31,7 +31,7 @@
         }
         .contact-menu li 
         {
-            @include mixin.flex(centr,start);
+            @include mixin.flex(center,start);
             &:not(:last-child)
             {
                 margin-bottom: 12px;
@@ -47,7 +47,7 @@
         }
         a 
         {
-            @include mixin.flex(centr,start);
+            @include mixin.flex(center,start);
         }
         .social
         {
@@ -91,7 +91,7 @@
             line-height: 30px;
             outline: none;
             margin-bottom: 16px;
-            &:placeholder
+            &::placeholder
             {
                 font-family: "Wix Madefor Display";
                 color: var.$title-clr;
