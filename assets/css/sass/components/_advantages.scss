@@ -1,0 +1,38 @@
+@use "../utils/mixin";
+@use "../utils/variables" as var;
+
+.advantages
+{
+    .container
+    {
+        border-radius: 36px;
+        background: var.$gradient-clr;
+        padding: 60px;
+    }
+    .main-title
+    {
+        color: var.$white-clr;
+        margin-bottom: 112px;
+    }
+    &-box 
+    {
+        @include mixin.flex(center,space-between);
+        column-gap: 190px;
+        h3 
+        {
+            color: var.$white-clr;
+            font-family: "Jost";
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+            margin: 12px 0px 16px 0px;
+            width: 214px;
+        }
+        p 
+        {
+            @include mixin.small-text;
+            color: var.$white-clr;
+        }
+    }
+}

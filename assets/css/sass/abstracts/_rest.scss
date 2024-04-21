@@ -1,0 +1,36 @@
+@use "../utils/variables" as var;
+*
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.wrapper
+{
+    overflow: hidden;
+}
+
+.container
+{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+body
+{
+    font-family: "Wix Madefor Display";
+}
+
+.main-title
+{
+    color: var.$black-clr;
+    font-family: Jost;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px; 
+    text-transform: uppercase;
+}

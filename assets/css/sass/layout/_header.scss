@@ -1,0 +1,78 @@
+@use "../utils/mixin";
+@use "../utils/variables" as var;
+// ! header
+.header
+{
+    .container
+    {
+        @include mixin.flex(center,space-between);
+        padding: 30px 0;
+    }
+    &-center 
+    {
+        .menu
+        {
+            @include mixin.flex(center,center);
+            column-gap: 36px;
+            &-link 
+            {
+                @include mixin.small-text;
+                padding: 14px 22px;
+                border-radius: 18px;
+                border: 2px solid var.$main-clr;
+                &:hover
+                {
+                    background:  var.$main-clr;
+                    color: var.$white-clr;
+                }
+            }
+        }
+    }
+    &-right 
+    {
+        @include mixin.flex(center,center);
+        column-gap: 18px;
+        .header-search
+        {
+            border-radius: 16px;
+            border: 2px solid var.$main-clr;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            background-color: transparent;
+            outline: none;
+            @include mixin.flex(center,center);
+            &:hover
+            {
+                background:  var.$main-clr;
+                svg 
+                {
+                    path 
+                    {
+                        stroke: var.$white-clr ;
+                    }
+                }
+            }
+        }
+        .header-mail
+        {
+            border-radius: 16px;
+            border: 2px solid var.$main-clr;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            @include mixin.flex(center,center);
+            &:hover
+            {
+                background:  var.$main-clr;
+                svg 
+                {
+                    path 
+                    {
+                        stroke: var.$white-clr ;
+                    }
+                }
+            }
+        }
+    }
+}

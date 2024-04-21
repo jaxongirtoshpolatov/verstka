@@ -1,0 +1,166 @@
+@use "../utils/mixin";
+@use "../utils/variables" as var;
+
+.footer
+{
+    padding-top: 60px;
+    .container
+    {
+        border-radius: 36px;
+        background:  var.$gradient-clr;
+        padding: 60px;
+    }
+    &-top 
+    {
+        @include mixin.flex(start,space-between);
+        margin-bottom: 80px;
+    }
+    &-links 
+    {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+    &-left 
+    {
+        .footer-descr 
+        {
+            color: var.$white-clr;
+            font-family: "Wix Madefor Display";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px;
+            max-width: 254px;
+            margin: 20px 0 49px 0;
+        }
+        button 
+        {
+            width: 330px;
+            height: 74px;
+            padding: 24px 36px;
+            @include mixin.flex(center,center);
+            background-color: transparent;
+            border-radius: 30px;
+            border: 3px solid var.$white-clr;
+            cursor: pointer;
+            color: var.$white-clr;
+            font-family: "Wix Madefor Display";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px;
+            &:hover
+            {
+                background-color: #82C4D6;
+            }
+        }
+    }
+    &-right 
+    {
+        h3 
+        {
+            color: var.$white-clr;
+            font-family: "Jost";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        a 
+        {
+            @include mixin.small-text;
+            color: var.$white-clr;
+        }
+        .menu
+        {
+            margin-bottom: 37px;
+            li
+            {
+                &:not(:last-child)
+                {
+                    margin-bottom: 4px;
+                }
+            }
+        }
+        .address
+        {
+            margin-right: 81px;
+            a 
+            {
+                @include mixin.flex(start,center)
+            }
+           .street
+           {
+            max-width: 148px;
+            p
+            {
+                &:nth-child(2)
+                {
+                    transform: translateX(-15px);
+                }
+            }
+           }
+          
+        }
+        .contact
+        {
+            li
+            {
+                &:not(:last-child)
+                {
+                    margin-bottom: 6px;
+                }
+            }
+            margin-right: 88px;
+            a 
+            {
+                @include mixin.flex(cecnter,center);
+            }
+        }
+        .document
+        {
+            li
+            {
+                &:not(:last-child)
+                {
+                    margin-bottom: 4px;
+                }
+            }
+        }
+        .social
+        {
+            li 
+            {
+                &:not(:last-child)
+                {
+                    margin-bottom: 20px;
+                }
+            }
+            svg 
+            {
+                &:hover
+                {
+                    rect 
+                    {
+                        fill: var.$purple-clr;
+                    }
+                    path 
+                    {
+                        fill: var.$white-clr;
+                    }
+                }
+            }
+        }
+    }
+    &-bottom 
+    {
+        @include mixin.flex(center,space-between);
+        p 
+        {
+            @include mixin.small-text;
+            color: var.$white-clr;
+        }
+    }
+}

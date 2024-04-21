@@ -1,0 +1,148 @@
+@use "../utils/mixin";
+@use "../utils/variables" as var;
+
+.intro
+{
+    padding: 25px 0 60px 0;
+    .container, &-right
+    {
+        @include mixin.flex(center,center)
+    }
+    p 
+    {
+        @include mixin.subtitle;
+    }
+    &-left 
+    {
+        margin-right: 24px;
+        .high-tech
+        {
+            border-radius: 24px;
+            background: var.$gray-clr;
+            width: 648px;
+            height: 360px;
+            padding: 36px;
+            @include mixin.flex(start,space-between,column);
+            p 
+            {
+                color: var.$title-clr;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+                max-width: 254px;
+                text-transform: unset;
+            }
+        }
+        .left-bottom
+        {
+            @include mixin.flex(center,center);
+            column-gap: 24px;
+            margin-top: 24px;
+        }
+        figure 
+        {
+            img 
+            {
+                border-radius: 24px;
+                width: 312px;
+                height: 286px;
+            }
+        }
+        .veterinary
+        {
+            border-radius: 24px;
+            background: var.$gray-clr;
+            width: 312px;
+            height: 286px;
+            padding: 36px;
+            @include mixin.flex(start,space-between,column);
+            a 
+            {
+                @include mixin.flex(center,center);
+                p 
+                {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    margin-right: 4px;
+                }
+            }
+            &:hover
+            {
+                background-color: #E5F0F3;
+            }
+            &:active
+            {
+                background-color: #C2E3EB;
+            }
+        }
+    }
+    &-right 
+    {
+        .right-item
+        {
+            &:last-child
+            {
+                margin-left: 24px;
+            }
+        }
+        .electrosurgical, .disinfection
+        {
+            border-radius: 24px;
+            background: var.$main-clr;
+            width: 312px;
+            height: 280px;
+            margin-bottom: 24px;
+            padding: 36px;
+            @include mixin.flex(start,space-between,column);
+            a 
+            {
+                @include mixin.flex(center,center);
+                p 
+                {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    margin-right: 4px;
+                }
+                svg 
+                {
+                    path 
+                    {
+                        stroke: var.$white-clr;
+                    }
+                }
+            }
+            p 
+            {
+                color: var.$white-clr;
+            }
+            &:hover
+            {
+                background-color: #E5F0F3;
+                p
+                {
+                    color: var.$black-clr;
+                }
+            }
+            &:active
+            {
+                background-color: #C2E3EB;
+            }
+        }
+        figure 
+        {
+            height: 366px;
+            img 
+            {
+                border-radius: 24px;
+            }
+        }
+        .disinfection
+        {
+            margin: 0;
+            margin-top: 24px;
+        }
+    }
+}
