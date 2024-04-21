@@ -845,7 +845,7 @@ body {
   flex-direction: row;
 }
 
-.footer-bottom p {
+.footer-bottom p, .footer-bottom a {
   color: #1D1D1D;
   font-family: "Wix Madefor Display", sans-serif;
   font-size: 16px;
@@ -853,6 +853,14 @@ body {
   font-weight: 500;
   line-height: 22px;
   color: #fff;
+}
+
+.footer-bottom a:hover {
+  color: #E5F0F3;
+}
+
+.footer-bottom a:active {
+  color: #C2E3EB;
 }
 
 .header .container {

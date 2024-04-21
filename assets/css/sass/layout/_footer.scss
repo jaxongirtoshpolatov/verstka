@@ -157,10 +157,21 @@
     &-bottom 
     {
         @include mixin.flex(center,space-between);
-        p 
+        p, a
         {
             @include mixin.small-text;
             color: var.$white-clr;
+        }
+        a 
+        {
+            &:hover
+            {
+                color: #E5F0F3;
+            }
+            &:active
+            {
+                color: #C2E3EB;
+            }
         }
     }
 }

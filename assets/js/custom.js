@@ -83,4 +83,19 @@ input.addEventListener('input', (e) => {
     })
 })
 
+// ! contact form check rule
+let form, formInput ;
+form = document.querySelector('.contact-form');
+formInput = form.querySelectorAll('input');
+
+formInput.forEach((item) => {
+    item.addEventListener('input', (e) => {
+        if (e.target.value){
+            item.style.borderColor = '#000';
+        }else {
+            item.style.borderColor = '#999';
+        }
+    })
+})
+
 
