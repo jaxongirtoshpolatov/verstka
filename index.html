@@ -33,18 +33,50 @@
                     </ul>
                 </nav>
                 <div class="header-right">
-                    <button class="header-search">
+                    <button class="header-search" aria-label="Search button">
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 22.5C18.4183 22.5 22 18.9183 22 14.5C22 10.0817 18.4183 6.5 14 6.5C9.58172 6.5 6 10.0817 6 14.5C6 18.9183 9.58172 22.5 14 22.5Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M23.9997 24.4992L19.6997 20.1992" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <a class="header-mail" href="mailto:nikor@nikor.ru">
+                    <a class="header-mail" href="mailto:nikor@nikor.ru" aria-label="Brand email address">
                         <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.8 1.19922H3.2C1.98497 1.19922 1 2.18419 1 3.39922V16.5992C1 17.8142 1.98497 18.7992 3.2 18.7992H20.8C22.015 18.7992 23 17.8142 23 16.5992V3.39922C23 2.18419 22.015 1.19922 20.8 1.19922Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M23 4.49805L13.133 10.768C12.7934 10.9808 12.4007 11.0937 12 11.0937C11.5993 11.0937 11.2066 10.9808 10.867 10.768L1 4.49805" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
+                </div>
+                <!-- search panel -->
+                <div class="search-panel">
+                    <a class="brand-logo" href="#">
+                        <img src="./assets/images/icons/brand-logo.svg" alt="brand-logo">
+                    </a>
+                    <form>
+                        <input type="text" placeholder="Введите запрос">
+                        <div class="tools-btn">
+                            <div class="clear">
+                                <button class="clear-input">
+                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.5967 6.12891L6.40332 22.3223" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.40332 6.12891L22.5967 22.3223" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <span class="hor-line"></span>
+                            </div>
+                            <button class="search-btn">
+                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.4899 21.8001C17.9544 21.8001 21.5736 18.1809 21.5736 13.7165C21.5736 9.25199 17.9544 5.63281 13.4899 5.63281C9.02543 5.63281 5.40625 9.25199 5.40625 13.7165C5.40625 18.1809 9.02543 21.8001 13.4899 21.8001Z" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M23.595 23.8215L19.25 19.4766" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <button class="close">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.5 1.22656L1.5 18.2266" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.5 1.22656L18.5 18.2266" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </button>
                 </div>
             </div>
         </header>
@@ -88,7 +120,7 @@
                             </a>
                         </div>
                         <figure>
-                            <img src="./assets/images/doctor-2.png" alt="doctor">
+                            <img src="./assets/images/doctor-2.webp" alt="doctor">
                         </figure>
                        </div>
                        <div class="right-item">
@@ -212,7 +244,7 @@
                                         генератор самой высокой мощности</p>
                                 </div>
                                 <figure class="item-photo">
-                                    <img src="./assets/images/product-1.png" alt="product">
+                                    <img src="./assets/images/product-1.png" alt="product" loading="lazy">
                                 </figure>
                             </div>
                             <a href="#">
@@ -231,7 +263,7 @@
                                         генератор самой высокой мощности</p>
                                 </div>
                                 <figure class="item-photo">
-                                    <img src="./assets/images/product-1.png" alt="product">
+                                    <img src="./assets/images/product-1.png" alt="product" loading="lazy">
                                 </figure>
                             </div>
                             <a href="#">
@@ -249,7 +281,7 @@
                                     <p>Экстренная и плановая профилактическая дезинфекция воздуха и поверхностей</p>
                                 </div>
                                 <figure class="item-photo">
-                                    <img src="./assets/images/product-2.png" alt="product">
+                                    <img src="./assets/images/product-2.png" alt="product" loading="lazy">
                                 </figure>
                             </div>
                             <a href="#">
@@ -268,7 +300,7 @@
                                         генератор самой высокой мощности</p>
                                 </div>
                                 <figure class="item-photo">
-                                    <img src="./assets/images/product-1.png" alt="product">
+                                    <img src="./assets/images/product-1.png" alt="product" loading="lazy">
                                 </figure>
                             </div>
                             <a href="#">
@@ -286,7 +318,7 @@
                                     <p>Экстренная и плановая профилактическая дезинфекция воздуха и поверхностей</p>
                                 </div>
                                 <figure class="item-photo">
-                                    <img src="./assets/images/product-3.png" alt="product">
+                                    <img src="./assets/images/product-3.png" alt="product" loading="lazy">
                                 </figure>
                             </div>
                             <a href="#">
@@ -338,7 +370,7 @@
                     <div class="social">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="#" target="_blank">
                                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect width="50" height="50" rx="14" fill="white"/>
                                         <path d="M40.6789 32.5504C39.3843 30.2698 36.0494 27.5293 34.6726 26.3368C34.2958 26.0103 34.2555 25.4454 34.5984 25.0843C37.2259 22.3206 39.3274 19.1451 40.0507 17.2262C40.3699 16.3785 39.7092 15.4829 38.7784 15.4829H36.0746C35.1834 15.4829 34.6618 15.796 34.4132 16.2946C32.2296 20.6747 30.3564 22.5703 29.0452 23.6782C28.3111 24.2987 27.1663 23.7846 27.1663 22.8404C27.1663 21.0209 27.1663 18.669 27.1663 17.0012C27.1663 16.1924 26.4905 15.5379 25.657 15.5379L20.7176 15.4829C20.0959 15.4829 19.7407 16.1719 20.1139 16.655L20.9294 17.8009C21.2363 18.198 21.402 18.681 21.402 19.1768L21.3977 24.3375C21.3977 25.2353 20.2861 25.6739 19.6261 25.0449C17.3935 22.9165 15.4562 18.5703 14.7588 16.4921C14.5571 15.8905 13.9815 15.4843 13.3287 15.4829L10.6653 15.4766C9.66601 15.4766 8.93548 16.4039 9.20709 17.3376C11.6407 25.6993 16.6341 33.6541 25.5331 34.5165C26.4098 34.6012 27.1663 33.9101 27.1663 33.0546V30.3424C27.1663 29.5645 27.7895 28.896 28.5906 28.8763C28.6187 28.8756 28.6468 28.8756 28.6749 28.8756C31.0286 28.8756 33.6647 32.2288 34.5869 33.7972C34.852 34.2486 35.3477 34.5236 35.8837 34.5236H39.4664C40.5118 34.5236 41.1825 33.4383 40.6789 32.5504Z" fill="#9B7396"/>
@@ -347,7 +379,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" target="_blank">
                                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect width="50" height="50" rx="14" fill="white"/>
                                         <path d="M34.2243 15.9412L14.7112 23.5048C13.9259 23.857 13.6603 24.5624 14.5214 24.9452L19.5273 26.5443L31.6311 19.0252C32.292 18.5532 32.9686 18.6791 32.3864 19.1983L21.9909 28.6594L21.6643 32.6633C21.9668 33.2815 22.5206 33.2844 22.8739 32.9771L25.7499 30.2417L30.6757 33.9493C31.8197 34.6301 32.4422 34.1907 32.6884 32.9429L35.9192 17.5654C36.2547 16.0294 35.6826 15.3527 34.2243 15.9412Z" fill="#9B7396"/>
@@ -412,7 +444,7 @@
                             <div class="social">
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="#" target="_blank">
                                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <rect width="50" height="50" rx="14" fill="white"/>
                                                 <path d="M40.6789 32.5504C39.3843 30.2698 36.0494 27.5293 34.6726 26.3368C34.2958 26.0103 34.2555 25.4454 34.5984 25.0843C37.2259 22.3206 39.3274 19.1451 40.0507 17.2262C40.3699 16.3785 39.7092 15.4829 38.7784 15.4829H36.0746C35.1834 15.4829 34.6618 15.796 34.4132 16.2946C32.2296 20.6747 30.3564 22.5703 29.0452 23.6782C28.3111 24.2987 27.1663 23.7846 27.1663 22.8404C27.1663 21.0209 27.1663 18.669 27.1663 17.0012C27.1663 16.1924 26.4905 15.5379 25.657 15.5379L20.7176 15.4829C20.0959 15.4829 19.7407 16.1719 20.1139 16.655L20.9294 17.8009C21.2363 18.198 21.402 18.681 21.402 19.1768L21.3977 24.3375C21.3977 25.2353 20.2861 25.6739 19.6261 25.0449C17.3935 22.9165 15.4562 18.5703 14.7588 16.4921C14.5571 15.8905 13.9815 15.4843 13.3287 15.4829L10.6653 15.4766C9.66601 15.4766 8.93548 16.4039 9.20709 17.3376C11.6407 25.6993 16.6341 33.6541 25.5331 34.5165C26.4098 34.6012 27.1663 33.9101 27.1663 33.0546V30.3424C27.1663 29.5645 27.7895 28.896 28.5906 28.8763C28.6187 28.8756 28.6468 28.8756 28.6749 28.8756C31.0286 28.8756 33.6647 32.2288 34.5869 33.7972C34.852 34.2486 35.3477 34.5236 35.8837 34.5236H39.4664C40.5118 34.5236 41.1825 33.4383 40.6789 32.5504Z" fill="#9B7396"/>
@@ -420,7 +452,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="#" target="_blank">
                                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <rect width="50" height="50" rx="14" fill="white"/>
                                                 <path d="M34.2243 15.9412L14.7112 23.5048C13.9259 23.857 13.6603 24.5624 14.5214 24.9452L19.5273 26.5443L31.6311 19.0252C32.292 18.5532 32.9686 18.6791 32.3864 19.1983L21.9909 28.6594L21.6643 32.6633C21.9668 33.2815 22.5206 33.2844 22.8739 32.9771L25.7499 30.2417L30.6757 33.9493C31.8197 34.6301 32.4422 34.1907 32.6884 32.9429L35.9192 17.5654C36.2547 16.0294 35.6826 15.3527 34.2243 15.9412Z" fill="#9B7396"/>

@@ -57,6 +57,23 @@
                 @include mixin.flex(center,start);
                 column-gap: 20px;
             }
+            li 
+            {
+                &:hover
+                {
+                    svg 
+                    {
+                        rect 
+                        {
+                            fill: transparent;
+                        }
+                        path 
+                        {
+                            fill: var.$white-clr;
+                        }
+                    }
+                }
+            }
         }
     }
     .contact-form
@@ -141,7 +158,19 @@
             font-weight: 700;
             line-height: 26px;
             @include mixin.flex(center,center);  
-            margin: 36px auto;   
+            margin: 36px auto;
+            transition: all 0.5s ease;
+            &:hover
+            {
+                background-color: #BB93B6;
+                border-color: #BB93B6;
+                color: var.$white-clr;
+            }
+            &:active
+            {
+                background-color: #9B7396;
+                border-color: #9B7396;
+            }
         }
         .check-box
         {
@@ -157,18 +186,28 @@
                 width: 13px;
                 height: 2px;
                 background-color: var.$purple-clr;
-                transform: rotate(129deg);
+                transform: rotate(118deg) translateY(1px);
                 border-radius: 2px;
+                visibility: hidden;
+                opacity: 0;
                 &::after
                 {
                     position: absolute;
                     content: "";
-                    width: 10px;
+                    width: 8px;
                     height: 2px;
                     border-radius: 2px;
                     background-color: var.$purple-clr;
-                    transform: rotate(87deg) translate(4px, -1px);
+                    transform: rotate(95deg) translate(3px, -2px);
                 }
+            }
+        }
+        .check-box.checked 
+        {
+            .check
+            {
+                visibility: visible;
+                opacity: 1;
             }
         }
     }

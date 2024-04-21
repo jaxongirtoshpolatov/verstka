@@ -39,3 +39,48 @@
       }
     })
 });
+
+// ! checkbox script
+const checkBox = document.querySelector('.check-box');
+
+checkBox.addEventListener('click', () => {
+    checkBox.classList.toggle('checked');
+})
+
+// ! search panel script
+let searchPanel, closeBtn, search, input, clearVal, clearBox;
+
+searchPanel = document.querySelector('.search-panel');
+closeBtn = searchPanel.querySelector('.close');
+search = document.querySelector('.header-search');
+
+// ? open search panel
+search.addEventListener('click', () => {
+    searchPanel.classList.add('active');
+})
+
+// ? close search panel
+closeBtn.addEventListener('click', () => {
+    searchPanel.classList.remove('active');
+})
+
+// ? active input script
+input = searchPanel.querySelector('form input');
+clearBox = searchPanel.querySelector('.clear');
+clearVal = searchPanel.querySelector('.clear-input');
+
+
+input.addEventListener('input', (e) => {
+    if (e.target.value){
+        clearBox.style.display = 'block';
+    }else {
+        clearBox.style.display = 'none'
+    }
+    // ? clear input script
+    clearVal.addEventListener('click', (event) => {
+        e.target.value = "";
+        event.preventDefault();
+    })
+})
+
+
