@@ -125,6 +125,13 @@
                 {
                     color: var.$black-clr;
                 }
+                svg 
+                {
+                    path 
+                    {
+                        stroke: var.$black-clr;
+                    }
+                }
             }
             &:active
             {

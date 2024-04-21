@@ -16,12 +16,12 @@
 }
 
 body {
-  font-family: "Wix Madefor Display";
+  font-family: "Wix Madefor Display", sans-serif;
 }
 
 .main-title {
   color: #000;
-  font-family: Jost;
+  font-family: "Jost", sans-serif;
   font-size: 44px;
   font-style: normal;
   font-weight: 600;
@@ -60,7 +60,7 @@ body {
 
 .about-content .content-descr {
   color: #1D1D1D;
-  font-family: "Wix Madefor Display";
+  font-family: "Wix Madefor Display", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -78,7 +78,7 @@ body {
 
 .about-content a p {
   color: #9b7396;
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -110,7 +110,7 @@ body {
 
 .advantages-box h3 {
   color: #fff;
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 500;
@@ -121,7 +121,7 @@ body {
 
 .advantages-box p {
   color: #1D1D1D;
-  font-family: "Wix Madefor Display";
+  font-family: "Wix Madefor Display", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -151,7 +151,7 @@ body {
 
 .contacts .contact-info .subtitle {
   color: #fff;
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -220,7 +220,7 @@ body {
 
 .contacts .contact-form h4 {
   color: #1D1D1D;
-  font-family: "Wix Madefor Display";
+  font-family: "Wix Madefor Display", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -236,16 +236,16 @@ body {
   padding: 37px 30px;
   color: #1D1D1D;
   font-size: 16px;
-  font-family: "Wix Madefor Display";
+  font-family: "Wix Madefor Display", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
   outline: none;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .contacts .contact-form input::placeholder {
-  font-family: "Wix Madefor Display";
+  font-family: "Wix Madefor Display", sans-serif;
   color: #1D1D1D;
   font-size: 16px;
   font-style: normal;
@@ -258,12 +258,12 @@ body {
 }
 
 .contacts .contact-form .conditions {
-  margin: 12px auto;
+  margin: 9px auto;
   display: flex;
   align-items: center;
   justify-content: start;
   flex-direction: row;
-  width: 464px;
+  width: 471px;
   column-gap: 8px;
 }
 
@@ -364,7 +364,7 @@ body {
 
 .intro p {
   color: #1D1D1D;
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -494,6 +494,10 @@ body {
   color: #000;
 }
 
+.intro-right .electrosurgical:hover svg path, .intro-right .disinfection:hover svg path {
+  stroke: #000;
+}
+
 .intro-right .electrosurgical:active, .intro-right .disinfection:active {
   background-color: #C2E3EB;
 }
@@ -583,7 +587,7 @@ body {
 
 .products .product .item h3 {
   color: #1D1D1D;
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -595,7 +599,7 @@ body {
 .products .product .item p {
   max-width: 320px;
   color: #1D1D1D;
-  font-family: "Wix Madefor Display";
+  font-family: "Wix Madefor Display", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -613,7 +617,7 @@ body {
 
 .products .product .item a p {
   color: #64aabe;
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -636,7 +640,7 @@ body {
 
 .what-doing p {
   color: #1D1D1D;
-  font-family: "Wix Madefor Display";
+  font-family: "Wix Madefor Display", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -675,7 +679,7 @@ body {
 
 .what-doing-content .production span, .what-doing-content .install span {
   color: #fff;
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 600;
@@ -685,7 +689,7 @@ body {
 
 .what-doing-content .production h3, .what-doing-content .install h3 {
   color: #fff;
-  font-family: "Wix Madefor Display";
+  font-family: "Wix Madefor Display", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -722,13 +726,13 @@ body {
 
 .footer-left .footer-descr {
   color: #fff;
-  font-family: "Wix Madefor Display";
+  font-family: "Wix Madefor Display", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
   max-width: 254px;
-  margin: 20px 0 49px 0;
+  margin: 13px 0 43px 0;
 }
 
 .footer-left button {
@@ -744,7 +748,7 @@ body {
   border: 3px solid #fff;
   cursor: pointer;
   color: #fff;
-  font-family: "Wix Madefor Display";
+  font-family: "Wix Madefor Display", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -757,7 +761,7 @@ body {
 
 .footer-right h3 {
   color: #fff;
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -768,7 +772,7 @@ body {
 
 .footer-right a {
   color: #1D1D1D;
-  font-family: "Wix Madefor Display";
+  font-family: "Wix Madefor Display", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -785,7 +789,7 @@ body {
 }
 
 .footer-right .address {
-  margin-right: 81px;
+  margin-right: 66px;
 }
 
 .footer-right .address a {
@@ -843,7 +847,7 @@ body {
 
 .footer-bottom p {
   color: #1D1D1D;
-  font-family: "Wix Madefor Display";
+  font-family: "Wix Madefor Display", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -870,7 +874,7 @@ body {
 
 .header-center .menu-link {
   color: #1D1D1D;
-  font-family: "Wix Madefor Display";
+  font-family: "Wix Madefor Display", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -962,7 +966,7 @@ body {
   border-radius: 24px;
   background: #f5f5f7;
   color: #1D1D1D;
-  font-family: "Wix Madefor Display";
+  font-family: "Wix Madefor Display", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;

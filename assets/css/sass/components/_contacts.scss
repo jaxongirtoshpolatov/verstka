@@ -22,7 +22,7 @@
         .subtitle
         {
             color: var.$white-clr;
-            font-family: "Jost";
+            font-family: "Jost", sans-serif;
             font-size: 30px;
             font-style: normal;
             font-weight: 500;
@@ -102,15 +102,15 @@
             padding: 37px 30px;
             color: var.$title-clr;
             font-size: 16px;
-            font-family: "Wix Madefor Display";
+            font-family: "Wix Madefor Display", sans-serif;
             font-style: normal;
             font-weight: 500;
             line-height: 30px;
             outline: none;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
             &::placeholder
             {
-                font-family: "Wix Madefor Display";
+                font-family: "Wix Madefor Display", sans-serif;
                 color: var.$title-clr;
                 font-size: 16px;
                 font-style: normal;
@@ -124,9 +124,9 @@
         }
         .conditions
         {
-            margin: 12px auto;
+            margin: 9px auto;
             @include mixin.flex(center,start);
-            width: 464px;
+            width: 471px;
             column-gap: 8px;
             p 
             {

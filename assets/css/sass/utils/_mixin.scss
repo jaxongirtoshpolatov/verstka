@@ -5,7 +5,7 @@
 @mixin h2 
 {
     color: var(var.$title-clr);
-    font-family: "Jost";
+    font-family: "Jost", sans-serif;
     font-size: 44px;
     font-style: normal;
     font-weight: 600;
@@ -16,7 +16,7 @@
 @mixin small-text
 {
     color: var.$title-clr;
-    font-family: "Wix Madefor Display";
+    font-family: "Wix Madefor Display", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -27,7 +27,7 @@
 @mixin subtitle
 {
     color: var.$title-clr;
-    font-family: "Jost";
+    font-family: "Jost", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
