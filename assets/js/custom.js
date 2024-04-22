@@ -124,19 +124,31 @@ openModal.addEventListener("click", () => {
   successOverlay.style.display = "flex";
 });
 
+let formOverlay = document.querySelector('.form-overlay'),
+    formOverlayOpen = document.querySelector('.footer .footer-button'),
+    formOverlayClose = document.querySelector('.form-overlay .close-modal');
+
+formOverlayOpen.addEventListener('click', function () {
+  formOverlay.style.display = 'flex';
+})
+
+formOverlayClose.addEventListener('click', function () {
+  formOverlay.style.display = 'none';
+})
+
 // ! close modal script
 closeModal.addEventListener("click", () => {
   successOverlay.style.display = "none";
 });
 
-successOverlay.addEventListener("click", (e) => {
-  if (e.target.className === "success-overlay") {
-    successOverlay.style.display = "none";
-  }
-});
+// successOverlay.addEventListener("click", (e) => {
+//   if (e.target.className === "success-overlay") {
+//     successOverlay.style.display = "none";
+//   }
+// });
 
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    successOverlay.style.display = "none";
-  }
-});
+// document.addEventListener("keydown", (e) => {
+//   if (e.key === "Escape") {
+//     successOverlay.style.display = "none";
+//   }
+// });
