@@ -380,6 +380,7 @@ body {
   justify-content: center;
   flex-direction: row;
   display: none;
+  z-index: 2;
 }
 
 .contact-form .success {
@@ -393,6 +394,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 100;
 }
 
 .contact-form .success .main-title {

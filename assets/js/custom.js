@@ -95,7 +95,6 @@ form = document.querySelector(".contact-form");
 formInput = form.querySelectorAll("input");
 alertText = form.querySelectorAll("#alert");
 
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -130,12 +129,14 @@ closeModal.addEventListener("click", () => {
   successOverlay.style.display = "none";
 });
 
-successOverlay.addEventListener('click', () => {
+successOverlay.addEventListener("click", (e) => {
+  if (e.target.className === "success-overlay") {
     successOverlay.style.display = "none";
-})
+  }
+});
 
-document.addEventListener('keyup', (e) => {
-    if (e.key === 'Escape') {
-        successOverlay.style.display = "none";
-    }
-})
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    successOverlay.style.display = "none";
+  }
+});
