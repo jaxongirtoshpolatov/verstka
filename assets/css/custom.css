@@ -1528,8 +1528,14 @@ figure {
   }
 }
 @media screen and (max-width: 768px) {
+  .container {
+    padding: 20px !important;
+  }
   .products .container {
     padding: 40px 20px;
+  }
+  .products .product .item {
+    padding: 20px 30px;
   }
   .products .item-top {
     flex-direction: column !important;
