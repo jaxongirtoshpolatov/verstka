@@ -56,6 +56,26 @@
             }
         }
     }
+    // about
+    .about
+    {
+        &-photo 
+        {
+            position: relative;
+            figure 
+            {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main-title
+    {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 970px) {
@@ -90,6 +110,18 @@
             flex-direction: column;
         }
         
+    }
+    // about
+    .about
+    {
+        &-content 
+        {
+            h3 
+            {
+                min-width: unset;
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -177,6 +209,24 @@
                     margin-left: 0;
                 }
             }
+        }
+    }
+    // about
+    
+}
+
+@media screen and (max-width: 576px) {
+    // .about
+    .about
+    {
+        .container
+        {
+            align-items: start;
+        }
+        &-content 
+        {
+            padding: 20px;
+            width: 100%;
         }
     }
 }
