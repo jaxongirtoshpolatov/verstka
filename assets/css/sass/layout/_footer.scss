@@ -24,6 +24,7 @@
             left: 0;
             @include mixin.flex(center,center);
             display: none;
+            z-index: 3;
             .contact-form 
             {
                 position: relative;

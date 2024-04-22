@@ -804,6 +804,7 @@ body {
   justify-content: center;
   flex-direction: row;
   display: none;
+  z-index: 3;
 }
 
 .footer-top .form-overlay .contact-form {
