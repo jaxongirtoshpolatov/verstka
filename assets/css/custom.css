@@ -627,6 +627,10 @@ body {
   height: 212px;
 }
 
+.products .product .item:nth-child(5) p {
+  max-width: 340px;
+}
+
 .products .product .item:nth-child(3) p {
   max-width: 340px;
 }

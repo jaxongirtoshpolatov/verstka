@@ -25,6 +25,13 @@
             background: var.$white-clr;
             padding: 30px 40px;
             height: 212px;
+            &:nth-child(5)
+            {
+                p 
+                {
+                    max-width: 340px;
+                }
+            }
             &:nth-child(3)
             {
                 p 
