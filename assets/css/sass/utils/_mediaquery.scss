@@ -93,7 +93,7 @@
     {
         .product
         {
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
             .item
             {
                 height: auto;
@@ -632,6 +632,14 @@
         &-descr 
         {
             max-width: 100% !important;
+        }
+    }
+    // products
+    .products
+    {
+        .product
+        {
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         }
     }
     
