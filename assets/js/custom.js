@@ -48,11 +48,17 @@
 });
 
 // ! checkbox script
-const checkBox = document.querySelector(".check-box");
+const checkBoxs = (parent, child) => {
+  parent = document.querySelector(`${parent}`);
+  child = parent.querySelector(`${child}`);
 
-checkBox.addEventListener("click", () => {
-  checkBox.classList.toggle("checked");
-});
+  child.addEventListener("click", () => {
+    child.classList.toggle("checked");
+  });
+};
+
+checkBoxs(".footer-modal", ".check-box");
+checkBoxs(".contacts", ".check-box");
 
 // ! search panel script
 let searchPanel, closeBtn, search, input, clearVal, clearBox;
@@ -79,40 +85,44 @@ clearVal = searchPanel.querySelector(".clear-input");
 input.addEventListener("input", (e) => {
   if (e.target.value) {
     clearBox.style.display = "block";
-  } else {
-    clearBox.style.display = "none";
   }
   // ? clear input script
   clearVal.addEventListener("click", (event) => {
     e.target.value = "";
+    clearBox.style.display = "none";
     event.preventDefault();
   });
 });
 
 // ! contact form check rule
-let form, formInput, alertText;
-form = document.querySelector(".contact-form");
-formInput = form.querySelectorAll("input");
-alertText = form.querySelectorAll("#alert");
+const checkRule = (parent) => {
+  parent = document.querySelector(`${parent}`);
+  form = parent.querySelector("form");
+  formInput = form.querySelectorAll("input");
+  alertText = form.querySelectorAll("#alert");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  for (let i = 0; i < formInput.length; i++) {
-    if (!formInput[i].value) {
-      formInput[i].style.borderColor = "#FF5050";
-      alertText[i].style.display = "block";
-      formInput[i].style.marginBottom = "0";
-      formInput[i].addEventListener("input", () => {
-        if (formInput[i].value) {
-          formInput[i].style.marginBottom = "14px";
-          formInput[i].style.borderColor = "#000";
-          alertText[i].style.display = "none";
-        }
-      });
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    for (let i = 0; i < formInput.length; i++) {
+      if (!formInput[i].value) {
+        formInput[i].style.borderColor = "#FF5050";
+        alertText[i].style.display = "block";
+        formInput[i].style.marginBottom = "0";
+        formInput[i].addEventListener("input", () => {
+          if (formInput[i].value) {
+            formInput[i].style.marginBottom = "14px";
+            formInput[i].style.borderColor = "#000";
+            alertText[i].style.display = "none";
+          }
+        });
+      }
     }
-  }
-});
+  });
+};
+
+checkRule('.footer-modal');
+checkRule('.contacts');
+
 
 // ! open modal script
 let successOverlay, successModal, closeModal, openModal;
@@ -124,17 +134,17 @@ openModal.addEventListener("click", () => {
   successOverlay.style.display = "flex";
 });
 
-let formOverlay = document.querySelector('.form-overlay'),
-    formOverlayOpen = document.querySelector('.footer .footer-button'),
-    formOverlayClose = document.querySelector('.form-overlay .close-modal');
+let formOverlay = document.querySelector(".form-overlay"),
+  formOverlayOpen = document.querySelector(".footer .footer-button"),
+  formOverlayClose = document.querySelector(".form-overlay .close-modal");
 
-formOverlayOpen.addEventListener('click', function () {
-  formOverlay.style.display = 'flex';
-})
+formOverlayOpen.addEventListener("click", function () {
+  formOverlay.style.display = "flex";
+});
 
-formOverlayClose.addEventListener('click', function () {
-  formOverlay.style.display = 'none';
-})
+formOverlayClose.addEventListener("click", function () {
+  formOverlay.style.display = "none";
+});
 
 // ! close modal script
 closeModal.addEventListener("click", () => {

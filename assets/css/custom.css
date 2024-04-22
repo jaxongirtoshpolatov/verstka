@@ -368,7 +368,7 @@ body {
   opacity: 1;
 }
 
-.contact-form .success-overlay {
+.contact-form .success-overlay, .contact-form .wrong-overlay {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -422,6 +422,18 @@ body {
   line-height: 22px;
   line-height: 26px;
   max-width: 475px;
+}
+
+.contact-form .wrong-overlay .success-descr a {
+  color: #64aabe;
+}
+
+.contact-form .wrong-overlay .success-descr a:hover {
+  color: #82C4D6;
+}
+
+.contact-form .wrong-overlay .success-descr a:active {
+  color: #6EB6C9;
 }
 
 .intro {
