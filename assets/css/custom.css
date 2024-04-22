@@ -1121,6 +1121,7 @@ body {
   padding: 14px 22px;
   border-radius: 18px;
   border: 2px solid #64aabe;
+  font-weight: 600;
 }
 
 .header-center .menu-link:hover {

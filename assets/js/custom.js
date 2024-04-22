@@ -100,7 +100,7 @@ const checkRule = (parent) => {
   let form, formInput, alertText;
   form = parent.querySelector("form");
   formInput = form.querySelectorAll("input");
-  alertText = form.querySelectorAll("#alert");
+  alertText = form.querySelectorAll(".alert");
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
