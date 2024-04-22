@@ -69,6 +69,15 @@
             }
         }
     }
+    // what-doing
+    .what-doing
+    {
+        .container
+        {
+            flex-direction: column;
+            align-items: start;
+        }
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -167,6 +176,25 @@
             }
         }
     }
+    // what doiing
+    .what-doing
+    {
+        &-content 
+        {
+            width: 100%;
+            flex-direction: column;
+            row-gap: 24px;
+            div 
+            {
+                width: 100% !important;
+                p, div 
+                {
+                    width: 100% !important;
+                }
+            }
+        }
+        
+    }
 }
 
 @media screen and (max-width: 790px) {
@@ -227,6 +255,17 @@
         {
             padding: 20px;
             width: 100%;
+        }
+    }
+    // .what-doing
+    .what-doing
+    {
+        .status
+        {
+            span 
+            {
+                font-size: 40px;
+            }
         }
     }
 }

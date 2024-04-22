@@ -1352,6 +1352,10 @@ figure {
     position: absolute;
     bottom: 0;
   }
+  .what-doing .container {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 @media screen and (max-width: 1200px) {
   .main-title {
@@ -1418,6 +1422,17 @@ figure {
     display: inline-block;
     text-align: center;
   }
+  .what-doing-content {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .what-doing-content div {
+    width: 100% !important;
+  }
+  .what-doing-content div p, .what-doing-content div div {
+    width: 100% !important;
+  }
 }
 @media screen and (max-width: 790px) {
   .intro .left-bottom {
@@ -1455,6 +1470,9 @@ figure {
   .about-content {
     padding: 20px;
     width: 100%;
+  }
+  .what-doing .status span {
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 530px) {
