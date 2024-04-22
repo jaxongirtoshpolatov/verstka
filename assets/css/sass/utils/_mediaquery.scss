@@ -3,7 +3,7 @@
 @media screen and (max-width:1400px) {
     .container
     {
-        max-width: 90%;
+        max-width: 96%;
     }
     .header
     {
@@ -154,6 +154,10 @@
             width: calc(100% - 40px);
             height: auto;
             padding: 30px 40px;
+            .main-title
+            {
+                font-size: 24px;
+            }
             input 
             {
                 height: 60px;
@@ -163,6 +167,11 @@
             {
                 width: 100%;
                 padding: 28px;
+            }
+            .close-modal
+            {
+                top: 20px;
+                right: 20px;
             }
         }
     }
@@ -389,10 +398,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .container
-    {
-        padding: 20px !important;
-    }
     // .product
     .products
     {
