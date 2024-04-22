@@ -42,6 +42,36 @@
         {
             @include mixin.flex(center,start);
             column-gap: 10px;
+            &:hover
+            {
+                p
+                {
+                    color: #BB93B6;
+                    
+                    
+                }
+                svg 
+                    {
+                        path 
+                        {
+                            stroke:#BB93B6 ;
+                        }
+                    }
+            }
+            &:active
+            {
+                p
+                {
+                    color: #9B7396;
+                    svg 
+                    {
+                        path 
+                        {
+                            stroke:#BB93B6 ;
+                        }
+                    }
+                }
+            }
             p 
             {
                 color: var.$purple-clr;
@@ -49,7 +79,9 @@
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 30px; 
+                line-height: 30px;
+                
+                
             }
         }
     }
