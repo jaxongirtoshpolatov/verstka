@@ -1014,6 +1014,76 @@ body {
   color: #C2E3EB;
 }
 
+.cooki {
+  display: flex;
+  padding: 36px 40px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 36px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(186, 186, 186, 0.25);
+}
+
+.cooki-content {
+  max-width: 499px;
+}
+
+.cooki-content p {
+  color: #1D1D1D;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.cooki-content a {
+  color: #9b7396;
+}
+
+.cooki-content a:hover {
+  color: #BB93B6;
+}
+
+.cooki-content a:active {
+  color: #9B7396;
+}
+
+.cooki-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.cooki-btn button {
+  width: 277px;
+  height: 74px;
+  padding: 40px;
+  border-radius: 30px;
+  border: 3px solid #9b7396;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  background-color: #9b7396;
+}
+
+.cooki-btn button:nth-child(1) {
+  background-color: transparent;
+  color: #9b7396;
+}
+
 .header .container {
   display: flex;
   align-items: center;
