@@ -827,6 +827,12 @@ body {
   color: #64aabe;
 }
 
+.footer-top .form-overlay .contact-form form #alert {
+  max-width: 474px;
+  transform: unset;
+  margin: 0 auto 14px auto;
+}
+
 .footer-top .form-overlay .close-modal {
   background-color: transparent;
   border: none;

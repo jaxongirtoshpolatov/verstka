@@ -97,12 +97,14 @@ input.addEventListener("input", (e) => {
 // ! contact form check rule
 const checkRule = (parent) => {
   parent = document.querySelector(`${parent}`);
+  let form, formInput, alertText;
   form = parent.querySelector("form");
   formInput = form.querySelectorAll("input");
   alertText = form.querySelectorAll("#alert");
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
+    
     for (let i = 0; i < formInput.length; i++) {
       if (!formInput[i].value) {
         formInput[i].style.borderColor = "#FF5050";

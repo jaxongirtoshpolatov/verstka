@@ -32,6 +32,15 @@
                 {
                     color: var.$main-clr;
                 }
+                form 
+                {
+                    #alert
+                    {
+                        max-width: 474px;
+                        transform: unset;
+                        margin: 0 auto 14px auto;
+                    }
+                }
             }
             .close-modal 
             {
