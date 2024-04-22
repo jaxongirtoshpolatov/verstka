@@ -253,7 +253,7 @@ body {
   line-height: 30px;
 }
 
-.contact-form #alert {
+.contact-form .alert {
   color: #FF5050;
   font-family: "Wix Madefor Display", sans-serif;
   font-size: 12px;
@@ -831,7 +831,7 @@ body {
   color: #64aabe;
 }
 
-.footer-top .form-overlay .contact-form form #alert {
+.footer-top .form-overlay .contact-form form .alert {
   max-width: 474px;
   transform: unset;
   margin: 0 auto 14px auto;
