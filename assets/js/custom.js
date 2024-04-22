@@ -95,7 +95,6 @@ form = document.querySelector(".contact-form");
 formInput = form.querySelectorAll("input");
 alertText = form.querySelectorAll("#alert");
 
-console.log(formInput.length);
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -115,3 +114,28 @@ form.addEventListener("submit", (e) => {
     }
   }
 });
+
+// ! open modal script
+let successOverlay, successModal, closeModal, openModal;
+successOverlay = document.querySelector(".success-overlay");
+closeModal = successOverlay.querySelector(".close-success");
+openModal = document.querySelector(".send-application");
+
+openModal.addEventListener("click", () => {
+  successOverlay.style.display = "flex";
+});
+
+// ! close modal script
+closeModal.addEventListener("click", () => {
+  successOverlay.style.display = "none";
+});
+
+successOverlay.addEventListener('click', () => {
+    successOverlay.style.display = "none";
+})
+
+document.addEventListener('keyup', (e) => {
+    if (e.key === 'Escape') {
+        successOverlay.style.display = "none";
+    }
+})

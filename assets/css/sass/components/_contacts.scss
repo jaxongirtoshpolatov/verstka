@@ -76,156 +76,199 @@
             }
         }
     }
-    .contact-form
+}
+.contact-form
+{
+    padding: 90px 80px;
+    height: 722px;
+    width: 50%;
+    border-radius: 36px;
+    background: var.$gray-clr;
+    text-align: center;
+    .main-title 
     {
-        padding: 90px 80px;
-        height: 722px;
-        width: 50%;
-        border-radius: 36px;
-        background: var.$gray-clr;
-        text-align: center;
-        .main-title 
+        color: var.$purple-clr;
+    }
+    h4 
+    {
+        @include mixin.small-text;
+        margin: 12px 0 24px 0;
+    }
+    input 
+    {
+        border-radius: 26px;
+        border: 2px solid  #999;
+        width: 474px;
+        height: 76px;
+        padding: 37px 30px;
+        color: var.$title-clr;
+        font-size: 16px;
+        font-family: "Wix Madefor Display", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 14px;
+        outline: none;
+        &::placeholder
         {
-            color: var.$purple-clr;
-        }
-        h4 
-        {
-            @include mixin.small-text;
-            margin: 12px 0 24px 0;
-        }
-        input 
-        {
-            border-radius: 26px;
-            border: 2px solid  #999;
-            width: 474px;
-            height: 76px;
-            padding: 37px 30px;
+            font-family: "Wix Madefor Display", sans-serif;
             color: var.$title-clr;
             font-size: 16px;
-            font-family: "Wix Madefor Display", sans-serif;
             font-style: normal;
             font-weight: 500;
             line-height: 30px;
-            margin-bottom: 14px;
-            outline: none;
-            &::placeholder
-            {
-                font-family: "Wix Madefor Display", sans-serif;
-                color: var.$title-clr;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 30px;
-            }
         }
-        #alert 
+    }
+    #alert 
+    {
+        color:  #FF5050;
+        font-family: "Wix Madefor Display", sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: end;
+        margin-bottom: 14px;
+        transform: translateX(-11px);
+        display: none;
+    }
+    .mail-alert
+    {
+        margin-bottom: 0 !important;
+    }
+    .mail
+    {
+        margin-bottom: 0;
+    }
+    .conditions
+    {
+        margin: 9px auto;
+        @include mixin.flex(center,start);
+        width: 471px;
+        column-gap: 8px;
+        p 
         {
-            color:  #FF5050;
-            font-family: "Wix Madefor Display", sans-serif;
+            color: var.$title-clr;
             font-size: 12px;
             font-style: normal;
             font-weight: 500;
-            line-height: 18px;
-            text-align: end;
-            margin-bottom: 14px;
-            transform: translateX(-11px);
-            display: none;
-        }
-        .mail-alert
-        {
-            margin-bottom: 0 !important;
-        }
-        .mail
-        {
-            margin-bottom: 0;
-        }
-        .conditions
-        {
-            margin: 9px auto;
-            @include mixin.flex(center,start);
-            width: 471px;
-            column-gap: 8px;
-            p 
+            line-height: 16px;
+            text-align: start;
+            width: 432px;
+            a 
             {
-                color: var.$title-clr;
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 16px;
-                text-align: start;
-                width: 432px;
-                a 
-                {
-                    text-decoration: underline;
-                    color: var.$black-clr;
-                }
+                text-decoration: underline;
+                color: var.$black-clr;
             }
         }
-        button 
+    }
+    .send-application 
+    {
+        height: 76px;
+        padding: 34px;
+        width: 474px;
+        border-radius: 30px;
+        border: 3px solid var.$purple-clr;
+        outline: none;
+        color: var.$purple-clr;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        @include mixin.flex(center,center);  
+        margin: 36px auto;
+        transition: all 0.5s ease;
+        &:hover
         {
-            height: 76px;
-            padding: 34px;
-            width: 474px;
-            border-radius: 30px;
-            border: 3px solid var.$purple-clr;
-            outline: none;
-            color: var.$purple-clr;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 26px;
-            @include mixin.flex(center,center);  
-            margin: 36px auto;
-            transition: all 0.5s ease;
-            &:hover
-            {
-                background-color: #BB93B6;
-                border-color: #BB93B6;
-                color: var.$white-clr;
-            }
-            &:active
-            {
-                background-color: #9B7396;
-                border-color: #9B7396;
-            }
+            background-color: #BB93B6;
+            border-color: #BB93B6;
+            color: var.$white-clr;
         }
-        .check-box
+        &:active
         {
-            width: 24px;
-            height: 24px;
-            border-radius: 6px;
-            border: 2px solid var.$purple-clr;
-            cursor: pointer;
-            @include mixin.flex(center,end);
-            .check
+            background-color: #9B7396;
+            border-color: #9B7396;
+        }
+    }
+    .check-box
+    {
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
+        border: 2px solid var.$purple-clr;
+        cursor: pointer;
+        @include mixin.flex(center,end);
+        .check
+        {
+            position: relative;
+            width: 13px;
+            height: 2px;
+            background-color: var.$purple-clr;
+            transform: rotate(118deg) translateY(1px);
+            border-radius: 2px;
+            visibility: hidden;
+            opacity: 0;
+            &::after
             {
-                position: relative;
-                width: 13px;
+                position: absolute;
+                content: "";
+                width: 8px;
                 height: 2px;
-                background-color: var.$purple-clr;
-                transform: rotate(118deg) translateY(1px);
                 border-radius: 2px;
-                visibility: hidden;
-                opacity: 0;
-                &::after
-                {
-                    position: absolute;
-                    content: "";
-                    width: 8px;
-                    height: 2px;
-                    border-radius: 2px;
-                    background-color: var.$purple-clr;
-                    transform: rotate(95deg) translate(3px, -2px);
-                }
+                background-color: var.$purple-clr;
+                transform: rotate(95deg) translate(3px, -2px);
             }
         }
-        .check-box.checked 
+    }
+    .check-box.checked 
+    {
+        .check
         {
-            .check
-            {
-                visibility: visible;
-                opacity: 1;
-            }
+            visibility: visible;
+            opacity: 1;
         }
+    }
+    .success-overlay
+    {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #99999993;
+        @include mixin.flex(center,center);
+        display: none;
+    }
+    .success
+    {
+        width: 746px;
+        height: 733px;
+        padding: 30px 80px 90px 80px;
+        border-radius: 36px;
+        background: var.$white-clr;
+        position: relative;
+        @include mixin.flex(center,center, column);
+        .main-title
+        {
+            font-size: 30px;
+            line-height: 36px;
+            color: var.$black-clr;
+        }
+    }
+    .close-success
+    {
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .success-descr
+    {
+        @include mixin.small-text;
+        line-height: 26px;
+        max-width: 475px;
     }
 }

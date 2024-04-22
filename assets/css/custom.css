@@ -205,7 +205,7 @@ body {
   fill: #fff;
 }
 
-.contacts .contact-form {
+.contact-form {
   padding: 90px 80px;
   height: 722px;
   width: 50%;
@@ -214,11 +214,11 @@ body {
   text-align: center;
 }
 
-.contacts .contact-form .main-title {
+.contact-form .main-title {
   color: #9b7396;
 }
 
-.contacts .contact-form h4 {
+.contact-form h4 {
   color: #1D1D1D;
   font-family: "Wix Madefor Display", sans-serif;
   font-size: 16px;
@@ -228,7 +228,7 @@ body {
   margin: 12px 0 24px 0;
 }
 
-.contacts .contact-form input {
+.contact-form input {
   border-radius: 26px;
   border: 2px solid #999;
   width: 474px;
@@ -244,7 +244,7 @@ body {
   outline: none;
 }
 
-.contacts .contact-form input::placeholder {
+.contact-form input::placeholder {
   font-family: "Wix Madefor Display", sans-serif;
   color: #1D1D1D;
   font-size: 16px;
@@ -253,7 +253,7 @@ body {
   line-height: 30px;
 }
 
-.contacts .contact-form #alert {
+.contact-form #alert {
   color: #FF5050;
   font-family: "Wix Madefor Display", sans-serif;
   font-size: 12px;
@@ -266,15 +266,15 @@ body {
   display: none;
 }
 
-.contacts .contact-form .mail-alert {
+.contact-form .mail-alert {
   margin-bottom: 0 !important;
 }
 
-.contacts .contact-form .mail {
+.contact-form .mail {
   margin-bottom: 0;
 }
 
-.contacts .contact-form .conditions {
+.contact-form .conditions {
   margin: 9px auto;
   display: flex;
   align-items: center;
@@ -284,7 +284,7 @@ body {
   column-gap: 8px;
 }
 
-.contacts .contact-form .conditions p {
+.contact-form .conditions p {
   color: #1D1D1D;
   font-size: 12px;
   font-style: normal;
@@ -294,12 +294,12 @@ body {
   width: 432px;
 }
 
-.contacts .contact-form .conditions p a {
+.contact-form .conditions p a {
   text-decoration: underline;
   color: #000;
 }
 
-.contacts .contact-form button {
+.contact-form .send-application {
   height: 76px;
   padding: 34px;
   width: 474px;
@@ -319,18 +319,18 @@ body {
   transition: all 0.5s ease;
 }
 
-.contacts .contact-form button:hover {
+.contact-form .send-application:hover {
   background-color: #BB93B6;
   border-color: #BB93B6;
   color: #fff;
 }
 
-.contacts .contact-form button:active {
+.contact-form .send-application:active {
   background-color: #9B7396;
   border-color: #9B7396;
 }
 
-.contacts .contact-form .check-box {
+.contact-form .check-box {
   width: 24px;
   height: 24px;
   border-radius: 6px;
@@ -342,7 +342,7 @@ body {
   flex-direction: row;
 }
 
-.contacts .contact-form .check-box .check {
+.contact-form .check-box .check {
   position: relative;
   width: 13px;
   height: 2px;
@@ -353,7 +353,7 @@ body {
   opacity: 0;
 }
 
-.contacts .contact-form .check-box .check::after {
+.contact-form .check-box .check::after {
   position: absolute;
   content: "";
   width: 8px;
@@ -363,9 +363,63 @@ body {
   transform: rotate(95deg) translate(3px, -2px);
 }
 
-.contacts .contact-form .check-box.checked .check {
+.contact-form .check-box.checked .check {
   visibility: visible;
   opacity: 1;
+}
+
+.contact-form .success-overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(153, 153, 153, 0.5764705882);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  display: none;
+}
+
+.contact-form .success {
+  width: 746px;
+  height: 733px;
+  padding: 30px 80px 90px 80px;
+  border-radius: 36px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-form .success .main-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000;
+}
+
+.contact-form .close-success {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.contact-form .success-descr {
+  color: #1D1D1D;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  line-height: 26px;
+  max-width: 475px;
 }
 
 .intro {
@@ -734,6 +788,71 @@ body {
   justify-content: space-between;
   flex-direction: row;
   margin-bottom: 80px;
+}
+
+.footer-top .form-overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(153, 153, 153, 0.5529411765);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  display: none;
+}
+
+.footer-top .form-overlay .contact-form {
+  position: relative;
+}
+
+.footer-top .form-overlay .contact-form .main-title {
+  color: #64aabe;
+}
+
+.footer-top .form-overlay .close-modal {
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer-top .form-overlay .check-box {
+  border-color: #64aabe;
+}
+
+.footer-top .form-overlay .check-box .check {
+  background-color: #64aabe;
+}
+
+.footer-top .form-overlay .check-box .check::after {
+  background-color: #64aabe;
+}
+
+.footer-top .form-overlay .send-application {
+  border-color: #64aabe;
+  color: #64aabe;
+}
+
+.footer-top .form-overlay .send-application:hover {
+  background-color: #82C4D6;
+  border-color: #82C4D6;
+  color: #fff;
+}
+
+.footer-top .form-overlay .send-application:active {
+  background-color: #6EB6C9;
+  border-color: #6EB6C9;
 }
 
 .footer-links {
