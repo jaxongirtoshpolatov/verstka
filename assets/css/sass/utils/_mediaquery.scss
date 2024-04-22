@@ -93,7 +93,7 @@
     {
         .product
         {
-            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             .item
             {
                 height: auto;
@@ -363,6 +363,14 @@
             align-items: start !important;
         }
     }
+    // advantages
+    .advantages, .what-doing
+    {
+        .container
+        {
+            padding: 20px;
+        }
+    }
     // footer
     .footer
     {
@@ -396,6 +404,7 @@
     .cooki
     {
         flex-direction: column;
+        padding: 20px;
         button 
         {
             padding: 28px;

@@ -1362,7 +1362,7 @@ figure {
     gap: 24px;
   }
   .products .product {
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
   .products .product .item {
     height: auto;
@@ -1535,6 +1535,9 @@ figure {
     flex-direction: column !important;
     align-items: start !important;
   }
+  .advantages .container, .what-doing .container {
+    padding: 20px;
+  }
   .footer .container {
     padding: 40px;
   }
@@ -1553,6 +1556,7 @@ figure {
   }
   .cooki {
     flex-direction: column;
+    padding: 20px;
   }
   .cooki button {
     padding: 28px;
