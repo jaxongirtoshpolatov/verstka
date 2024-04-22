@@ -164,3 +164,16 @@ closeModal.addEventListener("click", () => {
 //     successOverlay.style.display = "none";
 //   }
 // });
+
+// ! open close menu
+let openMenu = document.querySelector('.header-bars'),
+    closeMenu = document.querySelector('.header-close'),
+    headerMenu = document.querySelector('.header-center');
+
+openMenu.addEventListener('click', () => {
+  headerMenu.classList.add('active');
+})
+
+closeMenu.addEventListener('click', () => {
+  headerMenu.classList.remove('active')
+})

@@ -38,8 +38,10 @@ a {
   text-decoration: none;
 }
 
-ul, ol {
+ul, ol,
+figure {
   padding: 0;
+  margin: 0;
 }
 
 .about .container {
@@ -1132,6 +1134,10 @@ ul, ol {
   position: relative;
 }
 
+.header-center {
+  transition: 0.3s linear;
+}
+
 .header-center .menu {
   display: flex;
   align-items: center;
@@ -1156,6 +1162,24 @@ ul, ol {
 .header-center .menu-link:hover {
   background: #64aabe;
   color: #fff;
+}
+
+.header-center .header-close {
+  display: none;
+}
+
+.header-center.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.header-btn .header-bars {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  display: none;
 }
 
 .header-right {
@@ -1208,11 +1232,16 @@ ul, ol {
   stroke: #fff;
 }
 
+.header-right .header-close {
+  display: none;
+}
+
 .header .search-panel {
   visibility: hidden;
   opacity: 0;
   position: fixed;
-  width: 1320px;
+  max-width: 1320px;
+  width: 100%;
   padding: 40px;
   background-color: #fff;
   border-radius: 0px 0px 30px 30px;
@@ -1220,16 +1249,18 @@ ul, ol {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  gap: 40px;
   z-index: -1;
   transition: 0.5s;
 }
 
 .header .search-panel form {
+  width: 1000px;
   position: relative;
 }
 
 .header .search-panel form input {
-  width: 1000px;
+  width: 100%;
   height: 60px;
   padding: 0px 30px;
   border-radius: 24px;
@@ -1296,8 +1327,8 @@ ul, ol {
 }
 
 .header .search-panel .close {
-  width: 50px;
-  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
   border-radius: 16px;
   border: 2px solid #64aabe;
   display: flex;
@@ -1312,6 +1343,132 @@ ul, ol {
   visibility: visible;
   opacity: 1;
   z-index: 2;
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 90%;
+  }
+  .header .search-panel {
+    width: 100%;
+    left: 0;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .header .search-panel {
+    top: 0;
+    gap: 20px;
+    padding: 20px;
+  }
+  .intro .container {
+    flex-direction: column;
+  }
+  .intro .container .intro-left, .intro .container .intro-right {
+    margin-right: 0;
+    width: 100%;
+  }
+  .intro .container .intro-left div, .intro .container .intro-right div {
+    width: 100%;
+  }
+  .intro .container .left-bottom {
+    margin-bottom: 24px;
+  }
+  .intro .container .right-item:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 970px) {
+  .header .container {
+    justify-content: space-between;
+  }
+  .header-btn .header-bars {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    display: block;
+  }
+  .header-center {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    transition: top 0.3s ease;
+  }
+  .header-center .menu {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 969px) {
+  .header-bars {
+    display: block;
+  }
+  .header-center {
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: #f5f5f7;
+  }
+  .header-center .header-close {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-color: transparent;
+    border-radius: 16px;
+    border: 2px solid #64aabe;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .header-center .menu {
+    row-gap: 24px;
+    margin-top: 164px;
+  }
+  .header-center .menu-link {
+    width: 140px;
+    display: inline-block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 790px) {
+  .intro .left-bottom {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .intro .left-bottom figure {
+    width: 100%;
+  }
+  .intro .left-bottom figure img {
+    width: inherit;
+    object-fit: cover;
+  }
+  .intro-right {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .intro-right figure {
+    width: 100%;
+    height: auto;
+  }
+  .intro-right figure img {
+    width: inherit;
+    object-fit: cover;
+    height: 312px;
+  }
+  .intro-right .right-item:last-child {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 530px) {
+  .intro .high-tech img {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */

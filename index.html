@@ -44,6 +44,11 @@
                     </a>
                 </div>
                 <nav class="header-center">
+                    <button class="header-close" aria-label="Close headr button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
                     <ul class="menu">
                         <li class="menu-item"><a href="#" class="menu-link">О нас</a></li>
                         <li class="menu-item"><a href="#" class="menu-link">Продукция</a></li>
@@ -51,7 +56,16 @@
                         <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
                     </ul>
                 </nav>
+                <!-- open and close -->
+                
                 <div class="header-right">
+                    <div class="header-btn">
+                        <button class="header-bars" aria-label="Menu bars icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                              </svg>
+                        </button>
+                    </div>
                     <button class="header-search" aria-label="Search button">
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 22.5C18.4183 22.5 22 18.9183 22 14.5C22 10.0817 18.4183 6.5 14 6.5C9.58172 6.5 6 10.0817 6 14.5C6 18.9183 9.58172 22.5 14 22.5Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -365,7 +379,7 @@
             <!-- contacts -->
             <section class="contacts">
                <div class="container">
-                <div class="contact-info">
+                <div class="contact-info col-6">
                     <h2 class="main-title">Контакты</h2>
                     <h4 class="subtitle">Общество с ограниченной ответственностью «НИКОР»</h4>
                     <ul class="contact-menu">
@@ -408,7 +422,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="contact-form">
+                <div class="contact-form col-6">
                     <form>
                         <h2 class="main-title">Свяжитесь с нами</h2>
                         <h4>Оставьте заявку и мы свяжемся с вами в течении дня</h4>
