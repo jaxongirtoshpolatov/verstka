@@ -106,8 +106,8 @@
             font-style: normal;
             font-weight: 500;
             line-height: 30px;
-            outline: none;
             margin-bottom: 14px;
+            outline: none;
             &::placeholder
             {
                 font-family: "Wix Madefor Display", sans-serif;
@@ -117,6 +117,23 @@
                 font-weight: 500;
                 line-height: 30px;
             }
+        }
+        #alert 
+        {
+            color:  #FF5050;
+            font-family: "Wix Madefor Display", sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+            text-align: end;
+            margin-bottom: 14px;
+            transform: translateX(-11px);
+            display: none;
+        }
+        .mail-alert
+        {
+            margin-bottom: 0 !important;
         }
         .mail
         {

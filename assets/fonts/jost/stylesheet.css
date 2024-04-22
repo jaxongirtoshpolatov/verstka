@@ -54,15 +54,6 @@
 
 @font-face {
     font-family: 'Jost';
-    src: url('Jost-Bold.woff2') format('woff2'),
-        url('Jost-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Jost';
     src: url('Jost-SemiItalic.woff2') format('woff2'),
         url('Jost-SemiItalic.woff') format('woff');
     font-weight: normal;
@@ -76,15 +67,6 @@
         url('Jost-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Jost';
-    src: url('Jost-Bold.woff2') format('woff2'),
-        url('Jost-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
     font-display: swap;
 }
 

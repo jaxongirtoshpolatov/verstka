@@ -240,8 +240,8 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
-  outline: none;
   margin-bottom: 14px;
+  outline: none;
 }
 
 .contacts .contact-form input::placeholder {
@@ -251,6 +251,23 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
+}
+
+.contacts .contact-form #alert {
+  color: #FF5050;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: end;
+  margin-bottom: 14px;
+  transform: translateX(-11px);
+  display: none;
+}
+
+.contacts .contact-form .mail-alert {
+  margin-bottom: 0 !important;
 }
 
 .contacts .contact-form .mail {

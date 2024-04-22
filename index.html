@@ -12,6 +12,8 @@
     <link rel="canonical" href="https://verstka-for-test.netlify.app/">
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <!-- Jost font -->
     <link rel="stylesheet" href="./assets/fonts/jost/stylesheet.css">
     <!-- wix-madefor-desplay font -->
@@ -408,9 +410,12 @@
                     <form>
                         <h2 class="main-title">Свяжитесь с нами</h2>
                         <h4>Оставьте заявку и мы свяжемся с вами в течении дня</h4>
-                        <input class="name" type="text" placeholder="Введите имя*" required>
-                        <input class="tel" type="text" placeholder="Введите телефон*" required>
-                        <input class="mail" type="email" placeholder="Введите email*" required>
+                        <input class="name" type="text" placeholder="Введите имя*" >
+                        <p id="alert">Пожалуйста, введите ваше имя</p>
+                        <input class="tel" type="text" placeholder="Введите телефон*" >
+                        <p id="alert">Пожалуйста, введите ваш номер телефона</p>
+                        <input class="mail" type="email" placeholder="Введите email*" >
+                        <p id="alert" class="mail-alert">Пожалуйста, введите ваш email</p>
                         <div class="conditions">
                             <div class="check-box">
                                 <div class="check"></div>
@@ -519,6 +524,8 @@
 
     </div>
 
+    <!-- FancyBox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <!-- custom js -->
     <script src="./assets/js/custom.js"></script>
 </body>
