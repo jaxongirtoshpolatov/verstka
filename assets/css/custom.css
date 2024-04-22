@@ -1356,6 +1356,17 @@ figure {
     flex-direction: column;
     align-items: start;
   }
+  .advantages-box {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 24px;
+  }
+  .products .product {
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  }
+  .products .product .item {
+    height: auto;
+  }
 }
 @media screen and (max-width: 1200px) {
   .main-title {
@@ -1461,6 +1472,23 @@ figure {
   }
   .intro-right .right-item:last-child {
     margin-left: 0;
+  }
+  .advantages-box {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 24px;
+  }
+  .advantages .main-title {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .products .container {
+    padding: 40px 20px;
+  }
+  .products .item-top {
+    flex-direction: column !important;
+    align-items: start !important;
   }
 }
 @media screen and (max-width: 576px) {
