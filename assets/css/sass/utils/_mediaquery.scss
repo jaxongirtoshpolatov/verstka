@@ -41,6 +41,15 @@
                     width: 100%;
                 }
             }
+            .intro-right
+            {
+                figure, img 
+                {
+                    width: 100%;
+                    height: 366px;
+                    object-fit: cover;
+                }
+            }
             .left-bottom
             {
                 margin-bottom: 24px;

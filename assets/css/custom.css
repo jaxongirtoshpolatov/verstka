@@ -1282,6 +1282,11 @@ figure {
   .intro .container .intro-left div, .intro .container .intro-right div {
     width: 100%;
   }
+  .intro .container .intro-right figure, .intro .container .intro-right img {
+    width: 100%;
+    height: 366px;
+    object-fit: cover;
+  }
   .intro .container .left-bottom {
     margin-bottom: 24px;
   }
