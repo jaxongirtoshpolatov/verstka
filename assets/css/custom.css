@@ -777,7 +777,7 @@ figure {
 .footer-top .form-overlay .contact-form form .form-alert {
   max-width: 474px;
   transform: unset;
-  margin: 0 auto 14px auto;
+  margin: 0 0 14px auto;
 }
 
 .footer-top .form-overlay .close-modal {
