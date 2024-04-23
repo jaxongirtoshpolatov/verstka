@@ -744,6 +744,10 @@ figure {
 }
 
 .footer-top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: row;
   margin-bottom: 80px;
 }
 
@@ -754,6 +758,10 @@ figure {
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   display: none;
   z-index: 3;
 }

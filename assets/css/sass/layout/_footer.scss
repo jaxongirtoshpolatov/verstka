@@ -12,6 +12,7 @@
     }
     &-top 
     {
+        @include mixin.flex(start,space-between);
         margin-bottom: 80px;
         .form-overlay
         {
@@ -21,6 +22,7 @@
             position: fixed;
             top: 0;
             left: 0;
+            @include mixin.flex(center,center);
             display: none;
             z-index: 3;
             .contact-form 
