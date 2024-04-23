@@ -124,10 +124,6 @@ figure {
 }
 
 .advantages-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
   column-gap: 190px;
 }
 
@@ -153,10 +149,6 @@ figure {
 }
 
 .contacts .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
   column-gap: 24px;
 }
 
@@ -180,13 +172,6 @@ figure {
   font-weight: 500;
   line-height: 38px;
   margin: 107px 0 40px 0;
-}
-
-.contacts .contact-info .contact-menu li {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  flex-direction: row;
 }
 
 .contacts .contact-info .contact-menu li:not(:last-child) {
@@ -213,10 +198,6 @@ figure {
 }
 
 .contacts .contact-info .social ul {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  flex-direction: row;
   column-gap: 20px;
 }
 
@@ -299,10 +280,6 @@ figure {
 
 .contact-form .conditions {
   margin: 9px auto;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  flex-direction: row;
   width: 471px;
   column-gap: 8px;
 }
@@ -334,10 +311,6 @@ figure {
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
   margin: 36px auto;
   transition: all 0.5s ease;
 }
@@ -657,13 +630,6 @@ figure {
   background-color: #C2E3EB;
 }
 
-.products .product .item-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
 .products .product .item h3 {
   color: #1D1D1D;
   font-family: "Jost", sans-serif;
@@ -711,10 +677,6 @@ figure {
   border-radius: 36px;
   background: #f5f5f7;
   padding: 60px;
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  flex-direction: row;
 }
 
 .what-doing p {
@@ -728,10 +690,6 @@ figure {
 }
 
 .what-doing-content {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  flex-direction: row;
   column-gap: 36px;
 }
 
@@ -743,11 +701,6 @@ figure {
   height: 330px;
   padding: 22px 36px 24px 36px;
   width: 332px;
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-direction: column;
   border-radius: 30px;
   background-color: #64aabe;
 }
@@ -791,10 +744,6 @@ figure {
 }
 
 .footer-top {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  flex-direction: row;
   margin-bottom: 80px;
 }
 
@@ -805,10 +754,6 @@ figure {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
   display: none;
   z-index: 3;
 }

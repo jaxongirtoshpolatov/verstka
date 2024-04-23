@@ -9,7 +9,6 @@
         border-radius: 36px;
         background: var.$gray-clr;
         padding: 60px;
-        @include mixin.flex(start,space-between);
     }
     p 
     {
@@ -18,7 +17,6 @@
     }
     &-content 
     {
-        @include mixin.flex(center,start);
         column-gap: 36px;
         .production, .install
         {
@@ -28,8 +26,6 @@
                 height: 330px;
                 padding: 22px 36px 24px 36px;
                 width: 332px;
-                @include mixin.flex(start,space-between);
-                flex-direction: column;
                 border-radius: 30px;
                 background-color: var.$main-clr;
             }

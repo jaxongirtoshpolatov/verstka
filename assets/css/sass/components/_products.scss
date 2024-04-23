@@ -71,10 +71,6 @@
                     background-color: #C2E3EB;
                 }
             }
-            &-top 
-            {
-                @include mixin.flex(center,space-between);
-            }
             h3 
             {
                 color: var.$title-clr;

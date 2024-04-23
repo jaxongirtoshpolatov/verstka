@@ -16,7 +16,6 @@
     }
     &-box 
     {
-        @include mixin.flex(center,space-between);
         column-gap: 190px;
         h3 
         {

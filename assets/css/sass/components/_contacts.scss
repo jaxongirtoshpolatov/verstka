@@ -5,7 +5,6 @@
 {
     .container
     {
-        @include mixin.flex(center,center);
         column-gap: 24px;
     }
     .contact-info
@@ -31,7 +30,6 @@
         }
         .contact-menu li 
         {
-            @include mixin.flex(center,start);
             &:not(:last-child)
             {
                 margin-bottom: 12px;
@@ -54,7 +52,6 @@
             margin-top: 107px;
             ul 
             {
-                @include mixin.flex(center,start);
                 column-gap: 20px;
             }
             li 
@@ -143,7 +140,6 @@
     .conditions
     {
         margin: 9px auto;
-        @include mixin.flex(center,start);
         width: 471px;
         column-gap: 8px;
         p 
@@ -175,7 +171,6 @@
         font-style: normal;
         font-weight: 700;
         line-height: 26px;
-        @include mixin.flex(center,center);  
         margin: 36px auto;
         transition: all 0.5s ease;
         &:hover
